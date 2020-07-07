@@ -43,7 +43,7 @@ late() {
 
 //1 early() { 
 //	g = sim.subpopulations.individuals.genomes;
-//	fp = paste0(c("/Users/tomwhite/Documents/rough/vcffiles/burnin",simID,"-0.vcf"));
+//	fp = paste0(c("../vcffiles/burnin",simID,"-0.vcf"));
 //	g.outputVCF(filePath = fp, simplifyNucleotides=F);
 //sim.outputFull(); 
 //}
@@ -54,7 +54,7 @@ late() {
 	if (gen <= endpoint & gen%steps == 0){
 		g = sim.subpopulations.individuals.genomes;
 		//g.outputVCF(simplifyNucleotides=T);
-		fp = paste0(c("~/Documents/geneticdiversity/vcffiles/burnin",simID,"-",gen,".vcf"));
+		fp = paste0(c("../vcffiles/burnin",simID,"-",gen,".vcf"));
 		g.outputVCF(filePath = fp, simplifyNucleotides=T);
 		//sim.outputFull();
 		//print(gen);
